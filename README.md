@@ -14,6 +14,7 @@ Implemented HashTable in Python using data structures __List(array)__ and __Link
 ----
 #### Hash Function ####
 function name: __getHashIndex()
+
 *Input* :  A plate - assume California format (eg:1ABC234)
 1. Get ASCII code of each char or number.
 2. Multiply with 1,11,13,17,3,5,7 (prime numbers) and emphasize on letters rather than numbers, as alphabets (A - Z) have wider range than numbers (0 - 9).
