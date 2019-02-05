@@ -22,6 +22,7 @@ function name: __getHashIndex()
 
 #### HashTable Class (PlatesHash) ####
 (This table excludes methods/functions for testing purpose)
+
 Function  | Purpose
 ------------- | -------------
 __ init()__  | Initialize a hash table with a given bucket size
@@ -35,18 +36,22 @@ __needReHash()  | Check if rehash is needed and rehash type based on load factor
 __reHash()  | Rehash when load factor is larger than 0.75 or less than 0.25
 
 
-##### Methods/Functions for Testing Purpose #####
+#### Methods/Functions for Testing Purpose ####
 - generateRandomPlateNumber()
-    >> Generate random plate numbers in California state format "1ABC234", and you can specify the number of keys by passing a specific value for parameter howMany (default value is 10 if not assigned).
+    > Generate random plate numbers in California state format "1ABC234", and you can specify the number of keys by passing a specific value for parameter howMany (default value is 10 if not assigned).
 - visualizeHash()
-    >> Print out the result of the whole hash table.
+    > Print out the result of the whole hash table.
 - evaluateHashedResult()
-    >> Get the Standard Deviation of all LinkedList lengths, for evaluating the results distribution.
+    > Get the Standard Deviation of all LinkedList lengths, for evaluating the results distribution.
 
-##### Usage #####
+#### Usage ####
 1. Clone the repo to your machine.
+
 `$ git clone https://github.com/susi0424/hashTable.git`
+
 2. Excute the script
+
 `$ python hashTable.py`
+
 3. See the result
 
