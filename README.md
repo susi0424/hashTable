@@ -1,5 +1,7 @@
 # HashTable #
 
+Considering the HyreCar business background information, this hash table is designed for car plates for fast searching, storing, and retrieving. And it is dynamic, triggering rehash based on load factor changes.
+
 Implemented HashTable in Python using data structures __List(array)__ and __LinkedList__ for resolving collisions, combined advantages from both:
 - List(array): Easy Search.
 - LinkedList: Easy Insert/Delete.
@@ -7,7 +9,7 @@ Implemented HashTable in Python using data structures __List(array)__ and __Link
 
 #### Highlights ####
   - Always __add new node at the head of LinkedList__, so the insert function takes only O(1) time complexity, and no need to traverse the LinkedList.
-  - Using __Standard Deviation to evaluate the distribution of LinkedLists__. In most cases, the length of LinkedLists are between 1 and 3. 
+  - Using __Standard Deviation to evaluate the distribution of LinkedLists__. In most cases, the lengths of LinkedLists are between 0 and 3. 
   - __Rehash the hash table dynamically based on Load Factor__, (trigger rehash by any Insert or Delete causing Load Factor larger than 0.75 or smaller than 0.25). The Rehash function is also object-oriented.
 ----
 #### Hash Function ####
@@ -23,7 +25,7 @@ function name: __getHashIndex()
 #### HashTable Class (PlatesHash) ####
 (This table excludes methods/functions for testing purpose)
 
-Function  | Purpose
+Method  | Purpose
 ------------- | -------------
 __ init()__  | Initialize a hash table with a given bucket size
 insert()  | Insert a plate (numbers) into a bucket (list) as a LinkedList node
