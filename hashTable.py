@@ -142,8 +142,9 @@ class PlatesHash:
     def evaluateHashedResult(self):
         distribution = []
         [distribution.append(resultList.getLen()) for resultList in self.buckets]
-        return numpy.std(distribution) # Standard Deviation of all LinkedLists Length
+        return str(numpy.std(distribution)) # Standard Deviation of all LinkedLists Length
     
+    ''' Get all buckets '''
     def getBuckets(self):
         return self.buckets
     
@@ -212,6 +213,6 @@ if __name__ == "__main__":
     platesList = generateRandomPlateNumber(howMany=75) # Specify the number of Keys here
     [platesHash.insert(plateNumber) for plateNumber in platesList]
     platesHash.visualizeHash()
-    print platesHash.evaluateHashedResult()
+    print 'Hash Performance: '+platesHash.evaluateHashedResult()
     
    
